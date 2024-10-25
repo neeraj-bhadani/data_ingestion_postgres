@@ -11,9 +11,8 @@ This documentation provides a detailed guide to set up, run, and understand the 
 Begin by cloning the project repository and navigating to the relevant branch.
 
 ```bash
-git clone git@github.com:analytics1211/de-assigment-bhadaneeraj.git
-cd de-assigment-bhadaneeraj
-git checkout PaynearbyDeAssignment_neeraj_bhadani
+git clone git@github.com:neeraj-bhadani/data_ingestion_postgres.git
+cd data_ingestion_postgres
 ```
 
 ### Step 2: Add the CSV File to the Data Folder
@@ -22,7 +21,7 @@ Ensure that the `transactions.csv` file is placed into the `data` folder located
 
 ```bash
 # Place the CSV file at the following location
-de-assigment-bhadaneeraj/data/transactions.csv
+data_ingestion_postgres/data/transactions.csv
 ```
 
 ### Step 3: Set Environment Variables in `.env` File
@@ -57,7 +56,7 @@ Once the application has finished running, you can check the data in the Postgre
 1. **Access the PostgreSQL container**:
     
     ```bash
-    docker exec -it de-assigment-bhadaneeraj-db-1 bash
+    docker exec -it <container_id> bash
     ```
     
 2. **Log into the PostgreSQL database**:
