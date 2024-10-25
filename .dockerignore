@@ -1,0 +1,9 @@
+.git
+__pycache__/
+*.py[cod]
+*.csv
+.env
+.DS_Store
+venv/
+.idea/*
+scratch.py
